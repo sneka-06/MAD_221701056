@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <!-- Spacer view to push the fragment slightly up -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <fragment
+            android:id="@+id/your_fragment"
+            android:name="com.example.fragments.studentdetails"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fragment_container1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <fragment
+            android:id="@+id/your_fragment1"
+            android:name="com.example.fragments.studentmarks"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+</LinearLayout>
